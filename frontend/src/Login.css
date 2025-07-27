@@ -1,0 +1,20 @@
+/* Login.css */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+}
+
+.login-box input,
+.login-box button {
+  padding: 10px;
+  font-size: 16px;
+}

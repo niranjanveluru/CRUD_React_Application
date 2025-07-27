@@ -1,0 +1,50 @@
+/* Full-screen center alignment */
+.dashboard-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* or center, if you want vertical centering */
+  min-height: 100vh;
+  position: relative;
+}
+
+/* header */
+.dashboard-header {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+/* Content box */
+.dashboard-box {
+  width: 100%;
+  max-width: 400px;
+}
+
+/* dashboard header */
+.dashboard-box h2 {
+  text-align: center;
+}
+
+/* Form row for input + button */
+.form-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px; /* adds ~2–3 lines of space */
+}
+
+/* List styling */
+.item-list {
+  list-style-type: none; /* Removes the default bullet */
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.item-list li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
