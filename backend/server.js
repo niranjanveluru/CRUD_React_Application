@@ -29,12 +29,21 @@ app.listen(5000, () => console.log('Server running on http://localhost:5000'));
 let items = [];
 let nextId = 1;
 
+// Add default item
+items.push({ id: nextId++, name: 'Default Item' });
+
 app.get('/items', authenticateToken, (req, res) => {
   res.json(items);
 });
 
-app.post('/items', authenticateToken , (req, res) => {
-  const item = { id: nextId++, ...req.body };
+app.post('/items', authenticateToken, (req, res) => {
+  const name = req.body?.name;
+
+  if (!name || typeof name !== 'string' || name.trim() === '') {
+    return res.status(400).json({ error: "'name' is required and must be a non-empty string" });
+  }
+
+  const item = { id: nextId++, name };
   items.push(item);
   res.status(201).json(item);
 });

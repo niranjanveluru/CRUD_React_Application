@@ -32,7 +32,7 @@ function Dashboard() {
       })
       .catch(error => {
         console.error('Create item failed:', error.response?.data || error.message);
-        alert('Failed to create item. Please check your authentication.');
+        alert('Failed to create item. Please add item name.');
       });
   };
 

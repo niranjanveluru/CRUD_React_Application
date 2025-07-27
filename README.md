@@ -15,36 +15,20 @@ Make sure you have these installed:
 
 ### 🚀 How to Run Locally
 
-#### 1. Clone the repository *(optional if you have local files)*
+#### 1. Clone the repository 
 
 ```bash
 git clone https://github.com/your-username/crud-dashboard.git
-cd crud-dashboard
 ```
 
-#### 2. Install Frontend Dependencies
-
-```bash
-cd frontend    # or wherever your React app lives
-npm install
-```
-
-#### 3. Start React App
-
-```bash
-npm start
-```
-
-It will launch at [http://localhost:3000](http://localhost:3000) by default.
-
-#### 4. Install Backend Dependencies
+#### 2. Install Backend Dependencies
 
 ```bash
 cd ../backend   # or wherever your Express backend lives
 npm install
 ```
 
-#### 5. Start Express Server
+#### 3. Start Express Server
 
 ```bash
 node server.js
@@ -53,6 +37,23 @@ node server.js
 It will run at [http://localhost:5000](http://localhost:5000)
 
 ---
+
+#### 4. Install Frontend Dependencies
+
+```bash
+cd frontend    # or wherever your React app lives
+npm install
+```
+
+#### 5. Start React App
+
+```bash
+npm start
+```
+
+It will launch at [http://localhost:3000](http://localhost:3000) by default.
+
+
 
 ### 🧪 Test Login Credentials
 
